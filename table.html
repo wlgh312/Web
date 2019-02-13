@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            table{
+                border:1px solid white
+            }
+            th{
+                background-color:lightgray
+            }
+            th, td{
+                padding:10px
+            }
+            td.down{
+                color:blue
+            }
+            td.up{
+                color:red
+            }
+            td.backdown{
+                color:white;
+                background-color:blue;
+            }
+            td.backup{
+                background-color:red;
+                color:white;
+            }
+            p.pdown{
+                background-color:blue;
+                color:white;
+                padding:2px;
+            }
+            p.pup{
+                background-color:red;
+                color:white;
+                padding:2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2 id="home"><a href="index.html">
+                    <img width="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-z9sGyYin3YR29L52C_cfZJp8yaAh8ARW76CgYtPBuPDBte3"></a></h2>
+        </div>
+        <div>
+            <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:darkslategray">환율</h2>
+        <table style="width:50%">
+            <tr>
+                <th>통화명</th>
+                <th>매매기준율</th>
+                <th>전일대비</th>
+                <th>등락률</th>
+            </tr>
+            <tr>
+                <td>미국 USD</td>
+                <td>1,123.40</td>
+                <td class="down">전일대비하락2.10</td>
+                <td><p class="pdown">
+                    -0.19%
+                </p></td>
+            </tr>
+            <tr>
+                <td>일본 JPY 100</td>
+                <td>1,015.73</td>
+                <td class="down">전일대비하락3.42</td>
+                <td><p class="pdown">-0.34%</p></td>
+            </tr>
+            <tr>
+                <td>유럽연합 EUR</td>
+                <td>1,273.04</td>
+                <td class="up">전일대비상승2.13</td>
+                <td><p class="pup"> +0.17%</p></td>
+            </tr>
+            <tr>
+                    <td>중국 CNY</td>
+                    <td>165.97</td>
+                    <td class="down">전일대비하락0.07</td>
+                    <td><p class="pdown">-0.04%</p></td>
+                </tr>
+        </table>
+        </div>
+    </body>
+</html>

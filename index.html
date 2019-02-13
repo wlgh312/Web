@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+*{
+            box-sizing: border-box;
+          }
+          
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          /* Style the header */
+          header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+          }
+          
+          /* Container for flexboxes */
+          section {
+            display: -webkit-flex;
+            display: flex;
+          }
+          
+          /* Style the navigation menu */
+          nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+          }
+          
+          /* Style the list inside the menu */
+          nav ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          /* Style the content */
+          article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+          }
+          
+          /* Style the footer */
+          footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+          }
+          
+          /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+          @media (max-width: 600px) {
+            section {
+              -webkit-flex-direction: column;
+              flex-direction: column;
+            }
+          }
+        </style>
+        <title>Maded by vsc</title>
+        <!-- Internal -->
+        <!-- External -->
+        <link rel="stylesheet" href="style.css">
+        <meta  http-equiv="refresh" content="1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <header><h1 id="home" style="color:cornsilk">Home</h1></header>
+        <div>
+            <nav><ul>
+                    <li><a href="page1.html" target="_blank">Page1</a></li>
+                    <li><a href="page2.html" target="_self">Page2</a></li>
+                    <li><a href="image_gallery.html" target="_self">Image gallery</a></li>
+                    <li><a href="table.html" target="_self">Table</a></li>
+                    <li><a href="javascript_exercise.html" target="_self">Java script</a></li>
+                </ul></nav>
+        </div>
+        <div>
+            <article>
+                    <p>Web programing</p>
+                    <p>Different html contents</p>
+                    <p id="time">time : </p>
+            </article>
+        
+        <script>
+            document.getElementById("time").innerHTML=Date()
+        </script>
+        </div>
+    </body>
+</html>

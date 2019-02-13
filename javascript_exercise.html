@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+            <h2 id="home"><a href="index.html">
+            <img width="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-z9sGyYin3YR29L52C_cfZJp8yaAh8ARW76CgYtPBuPDBte3"></a></h2>
+        </div>
+        <div>
+            <h1>Java script</h1>
+            <div>
+                    <img id="picture" src="img/cat.jpg" height="200">
+                    <button onclick="pic()">dog</button>
+                    <p id="demo">Watch here!</p>
+                    <button onclick="func1()">button1</button>
+                    <button onclick="func2()">button2</button>
+                    <img id="mou" src="img/sad.jpg" height="200">
+                    <button onmouseover="smile()">smile!</button>
+                <script>
+                    demo=document.getElementById("demo")
+                    picture=document.getElementById("picture")
+                    mou=document.getElementById("mou")
+                    function func1(){
+                        demo.innerHTML="button1 click!"
+                        demo.style.fontSize="30"
+                        demo.style.color="navy"
+                    }
+                    function func2(){
+                        demo.innerHTML="button2 click!"
+                        demo.style.fontSize="150%"
+                        demo.style.color="darkorange"
+                    }
+                    function pic(){
+                        picture.src="img/dog.jpg"
+                    }
+                    function smile(){
+                        mou.src="img/smile.jpg"
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
