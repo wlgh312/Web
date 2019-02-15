@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 1000px;
+  height: 100px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+#animate2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  left:950px;
+}
+#animate3 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: blue;
+}
+</style>
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 950) {
+      clearInterval(id);
+    } else {
+      pos++;  
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+<p><button onclick="Move()">Click Me</button></p>
+<div id ="container">
+        <div id ="animate2"></div>
+        <div id2="animate3"></div>
+      </div>
+<script>
+        function Move() {
+          var elem = document.getElementById("animate2");   
+          var elem1 = document.getElementById("animate3"); 
+          var pos = 950;
+          var id = setInterval(frame, 5);
+          var id2 = setInterval(frame, 5);
+          function frame() {
+            if (pos == 0) {
+              clearInterval(id);
+            }
+            else if(pos == 950){
+                clearInterval(id2);
+            }
+            else {
+              pos--;  
+              elem.style.left = pos + "px";
+              elem1.style.left = pos + "px";
+            }
+          }
+        }
+        </script>
+</body>
+</html>

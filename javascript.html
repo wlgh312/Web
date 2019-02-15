@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="js.css">
+    </head>
+    <body>
+        <p>
+        <script>
+            var person = {
+                firstName: "John",
+                lastName : "Doe",
+                id       : 5566,
+                fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                    }
+            };
+            document.write(person.fullName())
+            document.write(person.id)
+        </script>
+        </p>
+        <p>
+            <script>
+                var car={
+                    name: "Fiat",
+                    model: "500",
+                    weight: "850kg",
+                    color: "white",
+                    start : function(){
+                        return this.name+"의 모델은 "+this.model+"입니다.";
+                    }
+                };
+                document.write("차 이름 : "+car.name)
+                document.write("차 모델 : "+car.model)
+                document.write("차 무게 : "+car.weight)
+                document.write("차 색깔 : "+car.color)
+                document.write(car.start())
+            </script>
+        </p>
+        <div class="clearfix">
+        <p class="toon">
+            <script>
+                var webtoon1={
+                    img: "img/toon4.png",
+                    intro: "웹툰",
+                    exp: "매일 매일 새로운 재미 네이버웹툰 바로가기",
+                    render: function(){
+                        return "<img src="+this.img +" style='width:100%'>"+"<div class='text'>"+"<h3 class='sty'>"
+                        +this.intro+"</h3>"+"<p class='sty'>"+this.exp+"</p></div>";
+                    }
+                };
+                document.write(webtoon1.render())
+                </script>
+                </p>
+                <p class="toon">
+                <script>
+                    var webtoon2={
+                        img: "img/toon1.png",
+                        intro: "미래가 자꾸만 달라져 과거의 뭔가 잘못됐다",
+                        exp: "SAVE ME | Big Hit Ent.",
+                        render: function(){
+                            return "<img src="+this.img +" style='width:100%'>"+"<div class='text'>"+"<p>"
+                            +this.intro+"</p>"+"<p class='grey'>"+this.exp+"</p></div>";
+                        }
+                    };
+                    document.write(webtoon2.render())
+                </script>
+                </p>
+                <p class="toon">
+                <script>
+                        var webtoon3={
+                            img: "img/toon2.png",
+                            intro: "너를 낱낱이 파헤쳐 줄 거야",
+                            exp: "좋아하는 부분 | 타리",
+                            render: function(){
+                                return "<img src="+this.img +" style='width:100%'>"+"<div class='text'>"+"<p>"
+                                +this.intro+"</p>"+"<p class='grey'>"+this.exp+"</p></div>";
+                            }
+                        };
+                        document.write(webtoon3.render())
+                    </script>
+                </p>
+                <p class="toon">
+                <script>
+                            var webtoon4={
+                                img: "img/toon3.png",
+                                intro: "나 걔 취향 한번<br> 지대로 캐볼라구",
+                                exp: "알고있지만 | 정서",
+                                render: function(){
+                                    return "<img src="+this.img +" style='width:100%'>"+"<div class='text'>"+"<p>"
+                                    +this.intro+"</p>"+"<p class='grey'>"+this.exp+"</p></div>";
+                                }
+                            };
+                            document.write(webtoon4.render())
+                        </script>
+                    </p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <link rel="stylesheet" href="js.css">
+            </head>
+    <body>
+        <div class="clearfix">
+        <script>
+            function Toon1(img, intro, exp){
+                this.img=img;
+                this.intro=intro;
+                this.exp=exp;
+                this.render=function(){
+                    return "<div class='toon'><img src="+this.img +" style='width:100%'>"+"<div class='text'>"+"<h3 class='sty'>"+this.intro+"</h3><p class='sty'>"+this.exp+"</p></div></div>";
+                }
+            };
+            function Toon2(img, intro, exp){
+                this.img=img;
+                this.intro=intro;
+                this.exp=exp;
+                this.render=function(){
+                    return "<div class='toon'><img src="+this.img +" style='width:100%'>"+"<div class='web'><p>"+this.intro+"</p>"+"<p class='grey'>"+this.exp+"</p></div></div>";
+                }
+            };
+            var toonone = new Toon1("img/toon4.png", "웹툰", "매일 매일 새로운 재미 네이버웹툰 바로가기");
+            var toontwo = new Toon2("img/toon1.jpg", "미래가 자꾸만 달라져 과거의 뭔가 잘못됐다", "SAVE ME | Big Hit Ent.")
+            var toonthree = new Toon2("img/toon2.jpg", "너를 낱낱이 파헤쳐 줄 거야", "좋아하는 부분 | 타리");
+            var toonfour = new Toon2("img/toon3.jpg", "나 걔 취향 한번<br> 지대로 캐볼라구", "알고있지만 | 정서");
+
+            document.write(toonone.render());
+            document.write(toontwo.render());
+            document.write(toonthree.render());
+            document.write(toonfour.render());
+            </script>
+            </div>
+            
+    </body>
+</html>
